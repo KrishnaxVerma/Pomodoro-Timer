@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myform" action="">
+        <div>
+            <label for="Worktime">Enter your Work Duration: </label>
+            <input placeholder="Hours" type="number" id="whrs" min="0" max="24">
+            <input placeholder="Minutes" type="number" id="wmin" min="0" max="59">
+            <input placeholder="Seconds" type="number" id="wsec" min="0" max="59">
+        </div>
+        <div>    
+            <label for="Worktime">Enter your Break Duration: </label>
+            <input placeholder="Hours" type="number" id="bhrs" min="0" max="24">
+            <input placeholder="Minutes" type="number" id="bmin" min="0" max="59">
+            <input placeholder="Seconds2" type="number" id="bsec" min="0" max="59">
+        </div>
+        <button type="submit">Start</button>
+    </form>
+
+    <div id="title"></div>
+    <div id="time"></div>
+
+    <button id="pause">Pause</button>
+    <button id="resume">Resume</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
